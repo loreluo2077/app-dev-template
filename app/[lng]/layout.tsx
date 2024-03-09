@@ -1,22 +1,16 @@
-import { dir } from 'i18next'
-import { languages } from '../i18n/settings'
+import { dir } from "i18next";
+import { languages } from "../i18n/settings";
 
 export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }))
+  return languages.map((lng) => ({ lng }));
 }
 
-export default function RootLayout({
-  children,
-  params: {
-    lng
-  }
-}:any) {
+export default function RootLayout({ children, params: { lng } }: any) {
   return (
     <html lang={lng} dir={dir(lng)}>
-      <head />
       <body>
-        {children}
+        <div className='h-screen'>{children}</div>
       </body>
     </html>
-  )
+  );
 }

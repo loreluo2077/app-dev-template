@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useTranslation } from "../i18n";
+import { useTranslation } from "@/app/i18n";
 
 export default async function Page({ params: { lng } }: any) {
   const { t } = await useTranslation(lng);
@@ -7,7 +7,7 @@ export default async function Page({ params: { lng } }: any) {
   return (
     <>
       <div className='h-full flex justify-center '>
-        <p>首页</p>
+        <p>博客</p>
       </div>
     </>
   );

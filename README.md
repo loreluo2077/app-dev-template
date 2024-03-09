@@ -28,6 +28,10 @@ https://www.framer.com/motion/three-introduction/
 https://locize.com/blog/next-app-dir-i18n/
 
 
+跳转
+<Link href={`/${lng}/second-page`}></Link>
+
+
 ### 添加博客文章支持
 
 
