@@ -5,3 +5,4 @@ build
 .contentlayer
 postgres
 *.md
+.contentlayer
