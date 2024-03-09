@@ -11,13 +11,14 @@ interface PageProps {
 }
 
 async function getPageFromParams(params: { slug: string[]; lng: String }) {
-  console.log("lang:" + params?.lng);
-  const slug = params?.lng + "/" + params?.slug?.join("/");
-  console.log("slug:" + slug);
+  console.log("this lang:" + params?.lng);
+  const slug = params?.lng + "/" + params?.slug;
+  console.log("this slug:" + slug);
   const page = allPosts.find(
     (page: { slugAsParams: string }) => page.slugAsParams === slug
   );
 
+  console.log("find page:" + page?.slugAsParams);
   if (!page) {
     null;
   }
@@ -25,8 +26,8 @@ async function getPageFromParams(params: { slug: string[]; lng: String }) {
   return page;
 }
 
-export async function generateStaticParams(): Promise<PageProps["params"][]> {
-  return allPosts.map((page: { slugAsParams: string }) => ({
+export async function generateStaticParams(): Promise<any> {
+  return allPosts.map((page: any) => ({
     slug: page.slugAsParams?.split("/"),
   }));
 }

@@ -15,11 +15,6 @@ var computedFields = {
     // 计算字段用于生成文档的URL参数形式的slug
     type: "string",
     resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/")
-  },
-  locale: {
-    // 计算字段用于生成文档的URL参数形式的slug
-    type: "string",
-    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1)
   }
 };
 var Post = defineDocumentType(() => ({
@@ -104,4 +99,4 @@ export {
   Post,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-IXYC2HOR.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-KG2T7RWX.mjs.map

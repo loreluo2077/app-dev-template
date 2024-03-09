@@ -17,11 +17,6 @@ const computedFields = {
     type: "string",
     resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
   },
-  locale: {
-    // 计算字段用于生成文档的URL参数形式的slug
-    type: "string",
-    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1),
-  },
 };
 
 // defineDocumentType 定义文档类型。可以这个参考格式定义多种文档。
