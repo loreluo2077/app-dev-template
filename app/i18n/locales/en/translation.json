@@ -1,4 +1,12 @@
 {
-    "title": "Hi there!",
-    "to-second-page": "To second page"
-  }
+  "websiteName": "AI+ Independent Development",
+  "welcome": "Welcome to Connect",
+  "info1": "My name is Lore luo, with over 10 years of backend development experience.",
+  "info2": "I'm transitioning into the field of AI and becoming a full-stack developer.",
+  "info3": "I'm changing careers to independent development and working on some interesting products.",
+  "myProduct": "My Products",
+  "product1": "《Guide to Transitioning into Independent Development》",
+  "product1_desc": "Sharing learning paths and insights on product development during the transition.",
+  "product2": "《Music Hot Reviews》",
+  "product2_desc": "An interesting app that recommends songs based on music reviews."
+}

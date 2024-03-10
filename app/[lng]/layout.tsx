@@ -9,7 +9,7 @@ export default function RootLayout({ children, params: { lng } }: any) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <body>
-        <div className='h-screen'>{children}</div>
+        <div className='h-screen container mx-auto'>{children}</div>
       </body>
     </html>
   );

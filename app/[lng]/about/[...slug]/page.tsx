@@ -2,6 +2,7 @@ import { allPosts } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { Mdx } from "@/components/mdx/mdx-components";
 import "@/styles/mdx.css";
+import { Metadata } from "next";
 
 interface PageProps {
   params: {
@@ -10,13 +11,32 @@ interface PageProps {
   };
 }
 
-async function getPageFromParams(params: { slug: string[]; lng: String }) {
-  console.log("this lang:" + params?.lng);
-  const slug = params?.lng + "/" + params?.slug;
-  console.log("this slug:" + slug);
+function getPage(lng: String, slug: String) {
+  const pageSlug = lng + "/" + slug;
+
   const page = allPosts.find(
-    (page: { slugAsParams: string }) => page.slugAsParams === slug
+    (page: { slugAsParams: string }) => page.slugAsParams === pageSlug
   );
+  return page;
+}
+
+//动态生成Metadata
+export async function generateMetadata(params: any): Promise<Metadata> {
+  // console.log("this params:" + JSON.stringify(params));
+  const page = getPage(params.params?.lng, params.params?.slug);
+
+  // console.log("printmeata:" + page?.title);
+  return {
+    title: page?.title,
+    description: page?.description,
+  };
+}
+
+async function getPageFromParams(params: { slug: string[]; lng: String }) {
+  // console.log("this lang:" + params?.lng);
+  // console.log("this slug:" + slug);
+
+  const page = getPage(params?.lng, params?.slug.toString());
 
   console.log("find page:" + page?.slugAsParams);
   if (!page) {
