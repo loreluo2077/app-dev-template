@@ -8,16 +8,40 @@ pnpm dev
 # or
 bun dev
 ```
+
+
+## Features
+
+- Next.js 13 App Directory
+- Radix UI Primitives
+- Tailwind CSS
+- Icons from [Lucide](https://lucide.dev)
+- Dark mode with `next-themes`
+- Tailwind CSS class sorting, merging and linting.
+
 ### 集成UI框架
+
+
 
 CSS库
 https://tailwindcss.com/
 
-CSS库增强
-https://daisyui.com/
 
 UI组件,可以完全自定义
 https://ui.shadcn.com/docs
+
+
+学习一些简单的布局
+https://wind-ui.com/components/features/
+https://tailwindui.com/components/preview
+https://floatui.com/
+https://merakiui.com/templates
+https://tailkit.com/free-ui-components
+https://tailgrids.com/components/call-to-actions
+https://mambaui.com/components/profile
+https://flowrift.com/c/product-grid
+https://www.hyperui.dev/
+
 
 
 动画库

@@ -4,7 +4,7 @@ interface IAppProps {}
 
 const LangSwitch: React.FunctionComponent<IAppProps> = (props) => {
   return (
-    <>
+
       <details className='z-10'>
         <summary>lang</summary>
         <ul className='p-2 bg-base-100 rounded-t-none'>
@@ -16,7 +16,7 @@ const LangSwitch: React.FunctionComponent<IAppProps> = (props) => {
           </li>
         </ul>
       </details>
-    </>
+
   );
 };
 
