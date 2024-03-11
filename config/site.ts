@@ -5,10 +5,10 @@ export const siteConfig = {
   description:
     "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
   mainNav: [
-    {
-      title: "Home",
-      href: "/",
-    },
+    // {
+    //   title: "Home",
+    //   href: "/",
+    // },
   ],
   links: {
     twitter: "https://twitter.com/shadcn",

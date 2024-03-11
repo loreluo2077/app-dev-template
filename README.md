@@ -22,6 +22,9 @@ bun dev
 ### 集成UI框架
 
 
+图标库:
+
+https://lucide.dev/icons/languages
 
 CSS库
 https://tailwindcss.com/
