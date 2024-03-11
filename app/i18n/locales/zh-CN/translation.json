@@ -5,9 +5,16 @@
     "info2":"我正在转型 AI赛道 并成为一名全栈开发者",
     "info3":"我正在转职 独立开发 并做一些有趣的产品",
     "myProduct":"我的产品",
+    "welcomeContact":"欢迎联系我",
+    "welcomeProduct":"我正在开发的一些产品和项目,欢迎和我交流.",
     "product1":"《后端转型独立开发指南》",
     "product1_desc":"分享一些转型的学习路线和产品开发心得",
+    "product1_content":"一款有趣的小应用,根据音乐评论推荐歌曲给你",
     "product2":"《音乐热评》",
-    "product2_desc":"一款有趣的小应用,根据音乐评论推荐歌曲给你"
+    "product2_desc":"一款有趣的小应用,根据音乐评论推荐歌曲给你",
+    "product2_content":"一款有趣的小应用,根据音乐评论推荐歌曲给你",
+    "product3": "开发中",
+    "product3_desc": "开发中",
+    "beian":"© 2024 备案号. All rights reserved."
 
   }

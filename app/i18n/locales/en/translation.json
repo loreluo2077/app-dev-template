@@ -5,8 +5,14 @@
   "info2": "I'm transitioning into the field of AI and becoming a full-stack developer.",
   "info3": "I'm changing careers to independent development and working on some interesting products.",
   "myProduct": "My Products",
+  "welcomeContact":"Welcome contact me",
   "product1": "《Guide to Transitioning into Independent Development》",
   "product1_desc": "Sharing learning paths and insights on product development during the transition.",
+  "product1_content":"Sharing learning paths and insights on product development during the transition.",
   "product2": "《Music Hot Reviews》",
-  "product2_desc": "An interesting app that recommends songs based on music reviews."
+  "product2_desc": "An interesting app that recommends songs based on music reviews.",
+  "product2_content":"An interesting app that recommends songs based on music reviews.",
+  "product3": "developing",
+  "product3_desc": "developing",
+  "beian":"© 2024 loreluo. All rights reserved."
 }
