@@ -36,7 +36,7 @@ https://ui.shadcn.com/docs
 
 学习一些简单的布局
 https://wind-ui.com/components/features/
-https://tailwindui.com/components/preview
+
 https://floatui.com/
 https://merakiui.com/templates
 https://tailkit.com/free-ui-components
@@ -74,3 +74,9 @@ https://locize.com/blog/next-app-dir-i18n/
 3.添加header头和footer
 4.完成个人主页+产品主页
 
+
+
+
+1. 接入gpt
+2. 接入广告
+3. 接入网站监控

@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/card"
 
 
-export function Contact(){
+ function Contact(){
   return  <div className="flex gap-6 justify-center"> <Link
               href={siteConfig.links.github}
               target="_blank"
