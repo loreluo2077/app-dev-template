@@ -27,9 +27,7 @@ export default async function IndexPage({ params: { lng } }: any) {
         <h1 className='text-xl font-extrabold leading-tight tracking-tighter md:text-2xl'>
           {/* Beautifully designed components <br className="hidden sm:inline" />
           built with Radix UI and Tailwind CSS. */}
-          {t("info1-1")}
-          <br className='inline md:hidden ' />
-          {t("info1-2")}
+          {t("info1")}
         </h1>
         <p className='max-w-[700px] text-lg  '>{t("info2")}</p>
         <p className='max-w-[700px] text-lg  '>{t("info3")}</p>
