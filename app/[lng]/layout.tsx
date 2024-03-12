@@ -1,16 +1,20 @@
 import { SiteHeader } from "@/components/site-header";
 import { useTranslation } from "@/app/i18n/index";
+// import { usePathname } from "next/navigation";
+import { redirect } from "next/navigation";
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: { locale: any };
+  params: { lng: any };
 }
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params: { lng },
 }: Readonly<RootLayoutProps>) {
-  const { t } = await useTranslation(locale);
+  console.log("locale:" + lng);
+
+  const { t } = await useTranslation(lng);
 
   return (
     <div className='relative flex min-h-screen flex-col'>

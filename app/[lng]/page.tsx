@@ -27,7 +27,9 @@ export default async function IndexPage({ params: { lng } }: any) {
         <h1 className='text-xl font-extrabold leading-tight tracking-tighter md:text-2xl'>
           {/* Beautifully designed components <br className="hidden sm:inline" />
           built with Radix UI and Tailwind CSS. */}
-          {t("info1")}
+          {t("info1-1")}
+          <br className='inline md:hidden ' />
+          {t("info1-2")}
         </h1>
         <p className='max-w-[700px] text-lg  '>{t("info2")}</p>
         <p className='max-w-[700px] text-lg  '>{t("info3")}</p>
@@ -58,6 +60,18 @@ export default async function IndexPage({ params: { lng } }: any) {
             </div>
           </Link>
 
+          <Link href={siteConfig.links.github} target='_blank' rel='noreferrer'>
+            <div
+              className={buttonVariants({
+                size: "icon",
+                variant: "ghost",
+              })}
+            >
+              <Icons.twitter className='h-5 w-5' />
+              <span className='sr-only'>twitter</span>
+            </div>
+          </Link>
+
           <Popover>
             <PopoverTrigger>
               <div
@@ -66,7 +80,7 @@ export default async function IndexPage({ params: { lng } }: any) {
                   variant: "ghost",
                 })}
               >
-                <Icons.wechat className='h-5 w-5' />
+                <Icons.wechat className='h-5 w-5 ' />
                 <span className='sr-only'>wechat</span>
               </div>
             </PopoverTrigger>
@@ -79,18 +93,6 @@ export default async function IndexPage({ params: { lng } }: any) {
               />
             </PopoverContent>
           </Popover>
-
-          <Link href={siteConfig.links.github} target='_blank' rel='noreferrer'>
-            <div
-              className={buttonVariants({
-                size: "icon",
-                variant: "ghost",
-              })}
-            >
-              <Icons.twitter className='h-5 w-5' />
-              <span className='sr-only'>twitter</span>
-            </div>
-          </Link>
         </div>
       </div>
 
